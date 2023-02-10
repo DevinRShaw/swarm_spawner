@@ -31,9 +31,9 @@ def save_to_csv(bot_info, filename):
 
 
 
-def spawn_bot_info():
+def spawn_bot_info(num_bots):
     bot_info_dict = []
-    for i in range(50):
+    for i in range(num_bots):
         first_name, last_name = generate_random_name()
         email = generate_random_email(first_name, last_name)
         password = generate_random_password()
@@ -46,3 +46,5 @@ def spawn_bot_info():
         })
     save_to_csv(bot_info_dict,'bot_info.csv')
     
+
+
