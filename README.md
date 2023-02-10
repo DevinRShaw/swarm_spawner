@@ -1,28 +1,26 @@
 # Swarm Spawner
 
-Swarm Spawner is a Python script that generates 50 fake user profiles and saves the information to a CSV file. Each user profile includes the following information:
+This code generates bot information such as name, email, and password. The information generated can be saved to a csv file.
 
-- First Name
-- Last Name
-- Email Address
-- Password
+## Dependencies
 
-The email addresses are generated using the following format: `first_name.last_name+random_numbers@hotmail.com`. The password is generated using a combination of letters and numbers and is 8 characters long.
+- random
+- string
+- pandas
 
-## Requirements
+## Functions
 
-To use Swarm Spawner, you will need to have the following software installed:
+### `generate_random_name`
+This function generates a random first and last name from the given list of names.
 
-- Python 3.x
-- Pandas
+### `generate_random_email`
+This function generates a random email based on the first and last name and a specified domain name.
 
-## Usage
+### `generate_random_password`
+This function generates a random password of a specified length (default is 8).
 
-1. Clone or download the repository to your local machine.
-2. Navigate to the directory where the script is located in the terminal/command prompt.
-3. Run the script by typing `python swarm_spawner.py` in the terminal/command prompt.
-4. The script will generate 50 user profiles and save the information to a file called `bot_info.csv`.
+### `save_to_csv`
+This function saves the bot information to a csv file with a specified filename.
 
-## Contributing
-
-If you would like to contribute to Swarm Spawner, please create a pull request with your changes.
+### `spawn_bot_info`
+This function generates bot information for a specified number of bots and a specified domain name.
