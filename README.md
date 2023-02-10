@@ -26,4 +26,4 @@ This function saves the bot information to a csv file with a specified filename.
 This function generates bot information for a specified number of bots and a specified domain name.
 
 ## Application 
-This is intended to be used as a part of a larger project to automatically make accounts using the csv created by this program
+This is intended to be used as a part of a larger project to automatically make accounts using the data in the csv created by this program
